@@ -1,66 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimal-ui"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komo Example</title>
+
+    <link rel="stylesheet" href="https://johny.rokita.group/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css"
     />
-    <title>Komo.JS</title>
 
     <link
-      type="text/css"
       rel="stylesheet"
-      href="assets/css/github-markdown.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     />
-    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="assets/css/hljs-github.min.css"
-    />
+
+    <link rel="stylesheet" href="../src/komo.css" />
+    <style>
+      body {
+        color: #fff;
+
+        background: #00b4db;
+        background: -webkit-linear-gradient(90deg, #00b4db, #0083b0);
+        background: linear-gradient(90deg, #00b4db, #0083b0);
+
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        height: 100vh;
+      }
+
+      ::selection {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      #app {
+        height: 100%;
+        text-align: center;
+      }
+
+      .app-inner {
+        padding: 20px;
+      }
+
+      a {
+        color: #cdc8ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #d4d1ff;
+      }
+
+      /* p {
+        font-weight: 800;
+        padding: 20px 0;
+        width: 100%;
+      } */
+
+      h1 {
+        font-weight: 300;
+        margin-bottom: 25px;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      h3,
+      h2 {
+        padding: 5px;
+      }
+
+      .code {
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    </style>
   </head>
   <body>
-    <article class="markdown-body">
-      <h1 id="komo"><a class="header-link" href="#komo"></a>Komo</h1>
-      <p>
-        <em
-          >Komo is a simple and lightweight framework for creating a Spotlight
-          style popup on your website.</em
-        >
-      </p>
-      <h3 id="official-website:-[komo.js.org](https://komo.js.org)">
-        <a
-          class="header-link"
-          href="#official-website:-[komo.js.org](https://komo.js.org)"
-        ></a
-        >Official website: <a href="https://komo.js.org">komo.js.org</a>
-      </h3>
-      <p align="left">
-        <a href="https://twitter.com/johnyrokita"
-          ><img
-            src="https://img.shields.io/twitter/follow/johnyrokita.svg?label=Twitter"
-            alt="Follow on twitter"
-        /></a>
-      </p>
+    <div id="app">
+      <div class="app-inner">
+        <h1><a href="https://komo.js.org">komo</a></h1>
+        <div class="description">
+          Komo is a simple and lightweight framework for creating a Spotlight
+          style popup on your website.
+        </div>
+        <h2>try this:</h2>
+        <h3>1. Press CMD + K or CTRL + K</h3>
+        <h3>2. Type in "magic" and press ENTER.</h3>
+        <h3>3. Now type in "stop" and press ENTER.</h3>
+        <div class="code">
+          <pre class="language-html">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;komo&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;komo.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src=&quot;komo.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      // Komo({
+      //   dark: false, // (Boolean) Dark Mode 
+      //   openKey: 75, // (Integer) Key Code (https://keycode.info/)
+      //   openKeyModifier: "META||CTRL", // (String) Modifier Key: "CTRL", "SHIFT", "META", "META||CTRL", ""
+      // }, callback);
+      Komo({}, (command) =&gt; {
+        switch (command) {
+          case &quot;magic&quot;:
+            setTimeout(function () {
+              alert(command);
+            }, 1);
+            break;
+          case &quot;stop&quot;:
+            setTimeout(function () {
+              alert(command);
+            }, 1);
+            break;
+        }
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <p>
+          Created by
+          <a href="https://github.com/jskull" target="blank">Johny Rokita</a>
+        </p>
+      </div>
+    </div>
 
-      <pre
-        class="hljs"
-      ><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span>(<span class="hljs-params">v</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(v);
-}
-
-Komo(
-  {
-    <span class="hljs-attr">darkMode</span>: <span class="hljs-literal">true</span>,
-  },
-  callback
-);</code></pre>
-      <p><em>The default key to open Komo is CMD + K</em></p>
-      <p>
-        Read the <a href="https://komo.js.org">documentation</a> to learn more!
-      </p>
-      <p>Created by <a href="">@johnyrokita</a></p>
-    </article>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"></script>
+    <script src="../src/komo.js"></script>
+    <script>
+      Komo({}, (command) => {
+        switch (command) {
+          case "magic":
+            confetti.start();
+            break;
+          case "stop":
+            confetti.stop();
+            break;
+        }
+      });
+    </script>
   </body>
 </html>

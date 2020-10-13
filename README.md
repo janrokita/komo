@@ -1,8 +1,6 @@
-# Komo `1.0`
+# Komo
 
 _Komo is a simple and lightweight framework for creating a Spotlight style popup on your website._
-
-Created by [@johnyrokita]()
 
 ### Official website: [komo.js.org](https://komo.js.org)
 
@@ -15,9 +13,9 @@ function callback(v) {
   console.log(v);
 }
 
-komo(
+Komo(
   {
-    darkMode: true
+    darkMode: true,
   },
   callback
 );
@@ -25,4 +23,6 @@ komo(
 
 _The default key to open Komo is CMD + K_
 
-Read the [documentation](https://pulsejs.org/v3/introduction/what-is-pulse.html) to learn more!
+Read the [documentation](https://komo.js.org) to learn more!
+
+Created by [@johnyrokita]()

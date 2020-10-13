@@ -21,9 +21,15 @@ Komo(
 
 ## CDN:
 
+CSS:
+
 ```
 https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.css
+```
 
+JS:
+
+```
 https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.min.js
 ```
 

@@ -7,7 +7,7 @@ Created by [@johnyrokita]()
 ### Official website: [komo.js.org](https://komo.js.org)
 
 <p align="left">
-  <a href="https://twitter.com/johnyrokita"><img src="https://img.shields.io/twitter/follow/johnyrokita.svg?label=Johny's Twitter" alt="Follow on twitter"></a>
+  <a href="https://twitter.com/johnyrokita"><img src="https://img.shields.io/twitter/follow/johnyrokita.svg?label=Twitter" alt="Follow on twitter"></a>
 </p>
 
 ```js

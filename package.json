@@ -1,0 +1,16 @@
+{
+  "name": "komo-js",
+  "version": "1.0.0",
+  "description": "Library to select elements the jQuery way, without needing to import all the jQuery stuff",
+  "main": "src/komo.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskull/komo.git"
+  },
+  "author": "Johny Rokita (https://johny.rokita.group)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jskull/komo/issues"
+  },
+  "homepage": "https://github.com/jskull/komo"
+}

@@ -19,6 +19,14 @@ Komo(
 );
 ```
 
+## CDN:
+
+```
+https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.css
+
+https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.min.js
+```
+
 _(The default key to open Komo is CMD/CTRL + K)_
 
 ### Official website: [komo.js.org](https://komo.js.org)

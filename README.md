@@ -21,17 +21,14 @@ Komo(
 
 ## CDN:
 
-CSS:
-
-```
+CSS: ```
 https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.css
-```
 
-JS:
+````
 
-```
+JS: ```
 https://cdn.jsdelivr.net/gh/jskull/komo@1.x/src/komo.min.js
-```
+````
 
 _(The default key to open Komo is CMD/CTRL + K)_
 

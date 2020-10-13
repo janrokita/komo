@@ -1,0 +1,4 @@
+*.gz
+*.tar
+.DS_Store
+node_modules

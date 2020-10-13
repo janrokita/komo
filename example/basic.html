@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>komo</title>
+    <link rel="stylesheet" href="../src/komo.css" />
+  </head>
+  <body>
+    <script src="../src/komo.js"></script>
+    <script>
+      Komo({}, (command) => {
+        switch (command) {
+          case "magic":
+            setTimeout(function () {
+              alert(command);
+            }, 1);
+            break;
+          case "stop":
+            setTimeout(function () {
+              alert(command);
+            }, 1);
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

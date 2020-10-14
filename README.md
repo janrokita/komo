@@ -1,6 +1,10 @@
 # Komo
 
-_Komo is a simple and lightweight framework for creating a Spotlight style popup on your website._
+_Komo is a simple and lightweight utility for creating a Spotlight style popup on your website._
+
+Feel free to fork and contribute to this project! I will gladly accept your pull requests if they fit this utility.
+
+If you have any ideas of what can be added to komo, send me an email `j@rokita.group` or make it!
 
 ## Example Usage:
 

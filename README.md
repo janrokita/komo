@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/jskull/komo/main/docs/assets/komo-icon.svg" width="80px"></p>
+<p align="center"><a href="https://komo.js.org"><img src="https://raw.githubusercontent.com/jskull/komo/main/docs/assets/komo-icon.svg" width="80px"></a></p>
 
 # Komo
 

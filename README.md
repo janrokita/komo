@@ -1,5 +1,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/jskull/komo/main/docs/assets/komo-icon.svg" width="80px"></p>
-<h1 align="center">Komo</h1>
+
+# Komo
 
 _Komo is a simple and lightweight utility for creating a Spotlight style popup on your website._
 

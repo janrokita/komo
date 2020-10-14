@@ -1,6 +1,6 @@
 {
   "name": "komojs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Komo is a simple and lightweight utility for creating a Spotlight style popup on your website.",
   "main": "src/komo.js",
   "repository": {

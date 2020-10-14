@@ -1,7 +1,7 @@
-// Komo v1.0 - https://github.com/jskull/komo
+// Komo v1.0.1 - https://github.com/jskull/komo
 
 function Komo(params = {}, callback) {
-  const defaultSettings = {
+  const defaultParams = {
     dark: false,
     openKey: 75,
     openKeyModifier: "META||CTRL",
@@ -32,7 +32,7 @@ function Komo(params = {}, callback) {
     return element;
   }
 
-  params = komoMerge(defaultSettings, params);
+  params = komoMerge(defaultParams, params);
   var komoElement = komoCreateElement(params.dark);
 
   document.addEventListener("keydown", keyPressEvent);

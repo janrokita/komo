@@ -1,5 +1,5 @@
 {
-  "name": "komo-js",
+  "name": "komo",
   "version": "1.0.0",
   "description": "Library to select elements the jQuery way, without needing to import all the jQuery stuff",
   "main": "src/komo.js",

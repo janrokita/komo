@@ -1,7 +1,7 @@
 {
   "name": "komojs",
-  "version": "1.0.0",
-  "description": "Library to select elements the jQuery way, without needing to import all the jQuery stuff",
+  "version": "1.0.1",
+  "description": "Komo is a simple and lightweight utility for creating a Spotlight style popup on your website.",
   "main": "src/komo.js",
   "repository": {
     "type": "git",

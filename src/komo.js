@@ -1,6 +1,51 @@
-// Komo v1.0.1 - https://github.com/jskull/komo
+// Komo v1.0.2 - https://github.com/jskull/komo
+let _KomoInitialized = false;
 
+// Returns the status of the komo popup (true is visible, false is hidden)
+function _KomoStatus() {
+  const komoElement = document.querySelector("#_Komo");
+
+  if (komoElement.style.display == "block") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Shows the komo popup
+function _KomoShow() {
+  const komoElement = document.querySelector("#_Komo");
+
+  if (komoElement.style.display == "block") {
+    return false;
+  } else {
+    komoElement.querySelector("input").value = "";
+    komoElement.style.display = "block";
+    komoElement.querySelector("input").focus();
+    return true;
+  }
+}
+
+// Hides the komo popup
+function _KomoHide() {
+  const komoElement = document.querySelector("#_Komo");
+
+  if (komoElement.style.display != "block") {
+    return false;
+  } else {
+    komoElement.style.display = "none";
+    komoElement.querySelector("input").blur();
+
+    return true;
+  }
+}
+
+// Initializes komo
 function Komo(params = {}, callback) {
+  if (_KomoInitialized) {
+    return false;
+  }
+
   const defaultParams = {
     dark: false,
     openKey: 75,
@@ -31,6 +76,8 @@ function Komo(params = {}, callback) {
     document.body.appendChild(element);
     return element;
   }
+
+  _KomoInitialized = true;
 
   params = komoMerge(defaultParams, params);
   var komoElement = komoCreateElement(params.dark);
@@ -130,8 +177,14 @@ function Komo(params = {}, callback) {
       hideKomo();
     }
   }
+
+  return true;
 }
 
 if (typeof exports != "undefined") {
   exports.Komo;
+  exports._KomoShow;
+  exports._KomoHide;
+  exports._KomoStatus;
+  exports._KomoInitialized;
 }
